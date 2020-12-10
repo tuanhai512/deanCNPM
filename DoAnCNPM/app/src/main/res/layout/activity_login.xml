@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="180dp"
+        android:background="@drawable/logologin"
+        android:layout_marginBottom="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="THƯ VIỆN HUFLIT"
+        android:textSize="35dp"
+        android:layout_marginBottom="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        />
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/Dangnhap"
+        android:layout_marginBottom="20dp"
+        >
+        <EditText
+            android:drawableLeft="@drawable/ic_baseline_account_circle_24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User"
+            android:textSize="25dp"
+            android:id="@+id/editTextUser"
+            >
+
+        </EditText>
+        <EditText
+            android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pass"
+            android:textSize="25dp"
+            android:id="@+id/editTextPass"
+            android:inputType="numberPassword"
+            >
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/Login"
+        >
+
+        <android.widget.Button
+            android:id="@+id/buttonlogin"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:hint="LOGIN"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:background="@drawable/shape2"
+            >
+
+        </android.widget.Button>
+
+        <android.widget.Button
+            android:id="@+id/buttoncancel"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:hint="CANCEL"
+            android:layout_marginLeft="5dp"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:background="@drawable/shape2">
+
+        </android.widget.Button>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/register"
+        >
+        <android.widget.Button
+            android:id="@+id/buttonregister"
+            android:layout_width="310dp"
+            android:layout_height="70dp"
+            android:hint="REGISTER"
+            android:textSize="25dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:background="@drawable/shape2"
+            >
+
+        </android.widget.Button>
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
